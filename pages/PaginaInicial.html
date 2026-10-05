@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetSESI - Horto - Painel Principal</title>
+    <link rel="stylesheet" href="../css/paginainicial.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="../assets/senai.png" alt="Logotipo do SESI SENAI">
+        </div>
+        <h1 class="title">NetSESI - Horto</h1>
+    </header>
+
+    <nav class="menu-bar" aria-label="Menu principal">
+        
+            <a href="cadastros.html" class="menu-btn">Cadastros</a>
+        
+        <a href="movimento.html" class="menu-btn">Movimento</a>
+        <a href="consultas.html" class="menu-btn">Consultas</a>
+        <a href="relatorios.html" class="menu-btn">Relatórios</a>
+        
+            <a href="utilitarios.html" class="menu-btn">Utilitários</a>
+        
+    </nav>
+
+    <main class="main-container">
+        <section class="shortcuts-section" aria-labelledby="atalhos-titulo">
+            <h2 id="atalhos-titulo">Atalhos para Celular:</h2>
+            <div class="shortcuts-grid">
+                <a href="aulas.html" class="shortcut-btn">Consulta Aula</a>
+                <a href="instrutores.html" class="shortcut-btn">Consulta Instrutor</a>
+                <a href="sala_calendario.html" class="shortcut-btn">Consulta Sala</a>
+            </div>
+        </section>
+
+        <div class="footer-actions">
+           <a href="logout.html" class="logout-btn">Logout</a>
+            <button type="button" id="btn-modo-escuro" class="dark-mode-btn">Modo Escuro</button>
+        </div>
+    </main>
+<div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+      </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script>
+      const btnModoEscuro = document.getElementById('btn-modo-escuro');
+      const body = document.body;
+
+      if (localStorage.getItem('modoEscuro') === 'ativado') {
+          body.classList.add('modo-escuro');
+      }
+
+      btnModoEscuro.addEventListener('click', () => {
+          body.classList.toggle('modo-escuro');
+          if (body.classList.contains('modo-escuro')) {
+              localStorage.setItem('modoEscuro', 'ativado');
+          } else {
+              localStorage.setItem('modoEscuro', 'desativado');
+          }
+      });
+  </script>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

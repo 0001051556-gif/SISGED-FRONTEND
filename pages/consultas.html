@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netnúcleo - Horto - Consultas</title>
+    <link rel="stylesheet" href="../css/consultas.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="../assets/senai.png" alt="Logotipo do SESI SENAI">
+        </div>
+        <h1 class="title">Netnúcleo - Horto</h1>
+    </header>
+
+    <main class="main-container">
+        <nav aria-label="Menu de Consultas">
+            <div class="secao-atual-container">
+                <span class="secao-btn" aria-current="page">Consultas</span>
+            </div>
+
+        <ul class="shortcuts-grid" style="list-style: none; padding: 0;">
+            <li><a href="consulta_horario.html" class="shortcut-btn">Horário</a></li>
+            <li><a href="sala_calendario.html" class="shortcut-btn">Calendário</a></li>
+            <li><a href="materias_por_turma.html" class="shortcut-btn">Matérias por turma</a></li>
+        </ul>
+        </nav>
+
+        <div class="footer-actions">
+            <a href="PaginaInicial.html" class="voltar-btn">Voltar</a>
+        </div>
+    </main>
+  <script>
+      if (localStorage.getItem('modoEscuro') === 'ativado') {
+          document.body.classList.add('modo-escuro');
+      }
+  </script>
+<script src="../js/app.js"></script>
+</body>
+</html>

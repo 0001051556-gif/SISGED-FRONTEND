@@ -1,0 +1,114 @@
+.formulario-cadastro {
+        background-color: #004587;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        color: #ffffff;
+    }
+    .form-grid {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .form-campo {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 200px;
+    }
+    .form-campo label {
+        font-weight: bold;
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    .form-campo input {
+        padding: 10px;
+        border: 1px solid #ffffff;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        outline: none;
+    }
+    .btn-cadastrar {
+        background-color: #32a84a;
+        color: #ffffff;
+        border: none;
+        padding: 11px 25px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: background 0.2s;
+        height: 41px;
+    }
+    .btn-cadastrar:hover {
+        background-color: #28853b;
+    }
+    .alerta {
+        margin-bottom: 15px;
+        padding: 10px 15px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    .alerta-sucesso {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+    .alerta-erro {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+    .tabela-dados {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tabela-dados th {
+        background-color: #004587;
+        color: #ffffff;
+        text-align: left;
+        padding: 12px 15px;
+        font-weight: bold;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+    }
+    .tabela-dados td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #e0e0e0;
+        color: #333333;
+        font-size: 0.95rem;
+    }
+    .tabela-dados tr:hover {
+        background-color: #f9f9f9;
+    }
+    .sem-dados {
+        text-align: center;
+        padding: 20px;
+        color: #666666;
+        font-style: italic;
+    }
+    body.modo-escuro {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.modo-escuro .header {
+    background-color: #002d5c;
+}
+
+body.modo-escuro .shortcut-btn {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+}
+
+body.modo-escuro .shortcut-btn:hover {
+    background-color: #4d4d4d;
+}

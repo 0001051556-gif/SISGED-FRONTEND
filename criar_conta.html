@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SESI SENAI - Criar Conta</title>
+  <link rel="stylesheet" href="css/cadastro_tela.css" />
+</head>
+<body>
+  <main class="painel">
+    <section class="grafico" aria-hidden="true">
+      <svg viewBox="0 0 570 507" preserveAspectRatio="xMidYMid slice">
+        <polygon points="0,0 200,0 350,254" fill="#35a936"/>
+        <polygon points="340,0 570,0 350,254" fill="#003b82"/>
+        <polygon points="0,507 200,507 350,254" fill="#35a936"/>
+        <polygon points="250,507 570,507 350,254" fill="#003b82"/>
+        <polygon points="0,110 350,254 0,365" fill="#003b82"/>
+      </svg>
+      <div class="foto-menina">
+        <img src="assets/menina.png" alt="Aluna sorrindo vestindo uniforme do SESI SENAI">
+      </div>
+      <div class="foto-menino">
+        <img src="assets/menino.png" alt="Aluno sorrindo vestindo uniforme do SESI SENAI">
+      </div>
+    </section>
+    <section class="cartao-wrap">
+      <div class="cartao">
+        <div class="logo-container">
+            <img class="logo-img" src="assets/senai.png" alt="Logotipo do SESI SENAI">
+        </div>
+        <form id="form-cadastro" method="POST" action="">
+          <div class="campo">
+            <label for="nome">NOME:</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required aria-required="true">
+          </div>
+          <div class="campo">
+            <label for="email">E-MAIL:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true">
+          </div>
+          <div class="campo">
+            <label for="senha">SENHA:</label>
+            <input type="password" id="senha" name="senha" autocomplete="new-password" required aria-required="true" minlength="6">
+          </div>
+          <div class="acoes">
+            <button type="submit">CRIAR CONTA</button>
+            <a href="index.html" class="voltar-link">VOLTAR</a>
+          </div>
+          <div class="mensagem" id="mensagem" aria-live="polite">
+              
+                  <span style="color: #ff5a3d; font-weight: bold;"></span>
+              
+              
+                  <span style="color: #35a936; font-weight: bold;"></span>
+              
+          </div>
+        </form>
+      </div>
+      <footer class="nucleo">NETNÚCLEO - HORTO</footer>
+    </section>
+  </main>
+
+  <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+      </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetSESI - Horto - Cadastros</title>
+    <link class="sh" rel="stylesheet" href="../css/cadastros.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="../assets/senai.png" alt="Logotipo do SESI SENAI">
+        </div>
+        <h1 class="title">NetSESI - Horto</h1>
+    </header>
+
+    <main class="main-container">
+        <nav aria-label="Menu de Cadastros">
+            <div class="secao-atual-container">
+                <span class="secao-btn" aria-current="page">Cadastros</span>
+            </div>
+
+            <ul class="shortcuts-grid" style="list-style: none; padding: 0;">
+                <li><a href="instrutores.html" class="shortcut-btn">Instrutores</a></li>
+                <li><a href="cursos.html" class="shortcut-btn">Cursos</a></li>
+                <li><a href="salas.html" class="shortcut-btn">Salas</a></li>
+                <li><a href="turmas.html" class="shortcut-btn">Turmas</a></li>
+                <li><a href="modalidades.html" class="shortcut-btn">Modalidades</a></li>
+                <li><a href="feriados.html" class="shortcut-btn">Feriados</a></li>
+                <li><a href="areas.html" class="shortcut-btn">Áreas</a></li>
+                <li><a href="atividades.html" class="shortcut-btn">Atividades</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-actions">
+            <a href="PaginaInicial.html" class="voltar-btn">Voltar</a>
+        </div>
+    </main>
+<div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+      </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script>
+      if (localStorage.getItem('modoEscuro') === 'ativado') {
+          document.body.classList.add('modo-escuro');
+      }
+  </script>
+<script src="../js/app.js"></script>
+</body>
+</html>

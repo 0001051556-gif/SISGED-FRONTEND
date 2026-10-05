@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SESI SENAI - Consulta de Horários por Sala</title>
+  <link rel="stylesheet" href="../css/consultas.css" />
+  <link rel="stylesheet" href="../css/instrutores.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+      <img class="logo-img" src="../assets/senai.png" alt="Logotipo do SESI SENAI">
+    </div>
+    <div class="title">Sistema Acadêmico</div>
+  </header>
+
+  <main class="main-container">
+    <div class="secao-atual-container">
+      <div class="secao-btn">CONSULTA DE HORÁRIOS POR SALA</div>
+    </div>
+
+    
+        <div class="alerta alerta-sucesso">
+            
+        </div>
+    
+
+    <section class="formulario-cadastro">
+        <form method="POST" action="">
+            <div class="form-grid">
+                <div class="form-campo">
+                    <label for="sala_busca">Digitar ID / Código da Sala:</label>
+                    <input type="text" id="sala_busca" name="sala_busca" value="" required>
+                </div>
+                <button type="submit" name="pesquisar" class="btn-cadastrar">PESQUISAR</button>
+            </div>
+        </form>
+    </section>
+
+    <div style="flex: 1; width: 100%;">
+        <table class="tabela-dados">
+            <thead>
+                <tr>
+                    <th>Instrutor Alocado</th>
+                    <th>Matéria</th>
+                    <th>Dia / Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    
+                        <tr>
+                            <td>—</td>
+                            <!-- EXIBIÇÃO SEGURA: Exibe o código digitado no lançamento se não houver texto associado -->
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                    
+                
+                    <tr>
+                        <td colspan="3" class="sem-dados">
+                            
+                        </td>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer-actions">
+      <a href="consultas.html" class="voltar-btn">VOLTAR</a>
+    </div>
+  </main>
+  <script>
+      if (localStorage.getItem('modoEscuro') === 'ativado') {
+          document.body.classList.add('modo-escuro');
+      }
+  </script>
+<script src="../js/app.js"></script>
+</body>
+</html>
